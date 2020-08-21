@@ -1,0 +1,41 @@
+<h3>Registrar Denuncia</h3>
+
+<form action="/new" method="POST" autocomplete="off">
+  <div class="form-row">
+      <div class="form-group col-md-6">
+          <label>Latitude</label>
+          <input required="" type="number" step="any" class="form-control" name="latitude" placeholder="Latitude">
+      </div>
+      <div class="form-group col-md-6">
+          <label>Longitude</label>
+          <input required="" type="number" step="any" class="form-control" name="longitude" placeholder="longitude">
+      </div>
+  </div>
+
+  <div class="form-row">
+      <div class="form-group col-md-6">
+          <label>Nome</label>
+          <input required="" type="text" class="form-control" name="nome" placeholder="nome">
+      </div>
+      <div class="form-group col-md-6">
+          <label>CPF</label>
+          <input required="" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"  type="text" class="form-control" name="CPF" placeholder="CPF no formato: xxx.xxx.xxx-xx">
+      </div>
+  </div>
+
+  <div class="form-group">
+        <label>Titulo</label>
+        <input required="" type="text" class="form-control" name="titulo" placeholder="Titulo">
+  </div>
+
+  <div class="form-group">
+        <label>Descricao</label>
+        <input required="" type="text" class="form-control" name="descricao" placeholder="Descricao">
+  </div>
+
+  <div class="form-group">
+      <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Enviar</button>
+      <a class="btn btn-secondary" href="/report/list"><i class="fa fa-list-alt"></i> visualizar todos</a>
+  </div>
+
+</form>
